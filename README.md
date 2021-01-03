@@ -1,3 +1,3 @@
-# Python Workshop Intermedia
+# Python Workshop Intermediate
 - Web Scraping
 - Using Pandas
