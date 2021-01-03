@@ -4,8 +4,8 @@ from bs4 import BeautifulSoup
 url = "https://stock360.hkej.com/marketWatch/Top20/topGainers"
 headers = requests.utils.default_headers()
 headers.update({ 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0'})
-req = requests.get(url, headers)
-soup = BeautifulSoup(req.content, 'html.parser')
+webpage_request = requests.get(url, headers)
+soup = BeautifulSoup(webpage_request.content, 'html.parser')
 
 # print(soup.prettify())
 top_stocks = soup.find(class_='dt640')
