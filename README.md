@@ -1,2 +1,3 @@
-# PythonInter
-Python Workshop Intermedia
+# Python Workshop Advanced
+- Web Scraping
+- Using Pandas
