@@ -8,11 +8,11 @@ webpage_request = requests.get(url, headers)
 soup = BeautifulSoup(webpage_request.content, 'html.parser')
 
 # print(soup.prettify())
-top_stocks = soup.find(class_='dt640')
-stocks = top_stocks.find_all("tr")
-print(len(stocks))
-for i in range(2, len(stocks)):
-    stock = stocks[i]
+top_stocks_table = soup.find(class_='dt640')
+stock_rows = top_stocks_table.find_all("tr")
+print(len(stock_rows))
+for i in range(2, len(stock_rows)):
+    stock = stock_rows[i]
     code = stock.find(class_='code')
     name = stock.find(class_='name')
     latest = stock.find(class_='latest')
@@ -21,7 +21,7 @@ for i in range(2, len(stocks)):
     volumn = stock.find(class_='volumn')
     turnover = stock.find(class_='turnover')
     market_cap = stock.find(class_='marketCap')
-    print(i-2, "\t", code.string.strip(), '\t', name.string.strip().ljust(30, ' '), '\t', latest.string, '\t', change_p.string)
+    print(i-1, "\t", code.string.strip(), '\t', name.string.strip().ljust(30, ' '), '\t', latest.string, '\t', change_p.string)
 
 # for link in soup.find_all('a'):
 #     print(link.get('href'))
