@@ -1,7 +1,24 @@
 # Python Workshop Intermediate
 
 - Using Pandas
-- Web Scraping
+- Jupyter Notebook Keyboard Shortcuts
+- Markdown
+- IPython Magic Commands
+- Pandas DataFrame
+- Selecting Rows and Columns
+- Tidying Data
+- Aggregation Functions
+- Groupby
+- Group Filtration
+- Merging Data
+- Data Visualizaton With Matplotlib
+
+- pandas built-in plots
+- Using seaborn
+- JSON Live Data Loading & Visualisation
+- Web Scraping Introduction
+- Manipulating JSON response
+- Using BeautifulSoup
 
 For Python Introduction, please go to
 
